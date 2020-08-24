@@ -1,0 +1,28 @@
+<template>
+    <div>
+        滑动滚动
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+
+        };
+    },
+    created() {
+
+    },
+    mounted() {
+
+    },
+    methods: {
+
+    }
+};
+</script>
+
+<style scoped lang="less">
+
+</style>
