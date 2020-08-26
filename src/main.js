@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import './assets/css/rest.css' //清除默认样式
 import './assets/js/vant'//引入vant UI 相关组件配置
 Vue.config.productionTip = false
 
