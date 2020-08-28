@@ -1,11 +1,12 @@
 <template>
-    <div>
-        滑动滚动
+    <div class="SelectAll">
+        全选与反选
     </div>
 </template>
 
 <script>
 export default {
+    name:'SelectAll',
     data() {
         return {
 

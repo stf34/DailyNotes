@@ -20,10 +20,16 @@ Vue.use(VueRouter)
         meta: { title: '首页', name: ['首页'] }
       },
       {
-        path: '/moth',
+        path: '/LazyLoading',
         // icon: 'el-icon-lx-home',
-        component: () => import('../views/page/home/moth/index.vue'),
-        meta: { title: '首页', name: ['首页'] }
+        component: () => import('../views/page//PackageComponents/LazyLoading/index.vue'),
+        meta: { title: '懒加载实现', name: ['懒加载实现'] }
+      },
+      {
+        path: '/PageMonitoring',
+        // icon: 'el-icon-lx-home',
+        component: () => import('../views/page/PackageComponents/PageMonitoring/index.vue'),
+        meta: { title: '页面监听', name: ['页面监听'] }
       },
     ]
   }

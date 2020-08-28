@@ -1,10 +1,9 @@
 <template>
-    <div class="bgPage" id="bgPage">
+    <div class="bgPage">
         <div class="bgPageContent">
-            <h1>疯狂的老鼠{{Height}}</h1>
-            <img width="180px" style="border-radius: 50%" bor src="../../../assets/img/shu.jpg">
-            <p>创作不易，请多多支持</p>
-            <p>你要悄悄拔尖，然后惊艳所有人</p>
+            <h1 class="title">疯狂的老鼠</h1>
+            <img class="userPic" src="../../../assets/img/shu.jpg">
+            <p class="text">你要悄悄拔尖，然后惊艳所有人</p>
         </div>
     </div>
 </template>
@@ -13,18 +12,11 @@
 export default {
     data() {
         return {
-            count:"",//倒计时
-            Height:0,
+
         };
     },
     created() {
-        //  let Height = window.screen.availHeight
-        //  this.Height = window.screen.availHeight
-        
-        // 动态设置元素高度：
-        // this.$refs.bgPage.style.height = Height + 'px'; //动态设置HTML元素高度
-
-        // this.threeGo()
+        this.threeGo()
     },
     mounted() {
 
@@ -61,12 +53,41 @@ export default {
     height: 100vh;
     background: linear-gradient(45deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));
     .bgPageContent{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
         width: 400px;
         height: 400px;
         margin: 0 auto; /*水平居中*/
         position: relative;
         top: 50%; /*偏移*/
         transform: translateY(-50%);
+        .title{
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            font-size:30px;
+            font-family:PingFangSC-Medium,PingFang SC;
+            font-weight:500;
+            color:rgba(51,51,51,1);
+            line-height:20px;
+        }
+        .userPic{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        .text{
+            width: 100%;
+            height:20px;
+            font-size:24px;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(102,102,102,1);
+            line-height:20px;
+            text-align: center;
+        }
     }
 }
 </style>

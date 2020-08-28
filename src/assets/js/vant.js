@@ -8,6 +8,10 @@ import {
     Row,
     Sidebar,
     SidebarItem,
+    PullRefresh,
+    List,
+    Cell,
+    CellGroup
 } from 'vant'
 Vue
 .use(Button)
@@ -18,3 +22,7 @@ Vue
 .use(Row)//layout 布局
 .use(Sidebar)
 .use(SidebarItem)//Sidebar 侧边导航
+.use(PullRefresh)//PullRefresh 上拉加载
+.use(List)//List 列表
+.use(Cell)//Cell 
+.use(CellGroup)//CellGroup 单元格

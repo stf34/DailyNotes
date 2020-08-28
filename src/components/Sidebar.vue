@@ -5,14 +5,14 @@
             <van-collapse-item name="1">
                 <template #title>
                     <div>
-                        <van-icon name="qr" /> 首页 
+                        <van-icon name="qr" /> vue 
                     </div>
                 </template>
                 <!-- 主要内容 -->
                 <van-sidebar v-model="activeKey" @change="onChange">
-                    <van-sidebar-item title="标签名1" to="/" />
-                    <van-sidebar-item title="标签名2" to="/moth" />
-                    <van-sidebar-item title="标签名3" />
+                    <van-sidebar-item title="vue学习首页" to="/layout" />
+                    <van-sidebar-item title="懒加载实现" to="/LazyLoading" />
+                    <van-sidebar-item title="页面监听" to='/PageMonitoring' />
                 </van-sidebar>
             </van-collapse-item>
             <van-collapse-item title="首页二" name="2" icon="shop-o">
@@ -47,5 +47,12 @@ export default {
 </script>
 
 <style scoped lang="less">
-
+.sidernav{
+    /deep/ .van-collapse-item__content {
+        padding: 0;
+        .van-sidebar{
+            width: 200px;
+        }
+    }
+}
 </style>
