@@ -13,6 +13,7 @@
                     <van-sidebar-item title="vue学习首页" to="/layout" />
                     <van-sidebar-item title="懒加载实现" to="/LazyLoading" />
                     <van-sidebar-item title="页面监听" to='/PageMonitoring' />
+                    <van-sidebar-item title="图片" to='/img' />
                 </van-sidebar>
             </van-collapse-item>
             <van-collapse-item title="首页二" name="2" icon="shop-o">

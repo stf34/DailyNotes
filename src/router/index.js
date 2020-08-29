@@ -31,6 +31,12 @@ Vue.use(VueRouter)
         component: () => import('../views/page/PackageComponents/PageMonitoring/index.vue'),
         meta: { title: '页面监听', name: ['页面监听'] }
       },
+      {
+        path: '/img',
+        // icon: 'el-icon-lx-home',
+        component: () => import('../views/page/PackageComponents/SelectAll/index.vue'),
+        meta: { title: '页面监听', name: ['页面监听'] }
+      },
     ]
   }
   // {

@@ -1,6 +1,7 @@
 <template>
     <div class="SelectAll">
-        全选与反选
+        <img src="http://m.images.ourjb.com/980agreement.png" alt="" srcset="">
+        
     </div>
 </template>
 
@@ -25,5 +26,8 @@ export default {
 </script>
 
 <style scoped lang="less">
-
+.SelectAll{
+    width: 100%;
+    height: 100%;
+}
 </style>
