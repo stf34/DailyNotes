@@ -32,10 +32,16 @@ Vue.use(VueRouter)
         meta: { title: '页面监听', name: ['页面监听'] }
       },
       {
-        path: '/img',
+        path: '/SelectAll',
         // icon: 'el-icon-lx-home',
         component: () => import('../views/page/PackageComponents/SelectAll/index.vue'),
-        meta: { title: '页面监听', name: ['页面监听'] }
+        meta: { title: '全选与反选', name: ['全选与反选'] }
+      },
+      {
+        path: '/calendar',
+        // icon: 'el-icon-lx-home',
+        component: () => import('../views/page/PackageComponents/calendar/calendar.vue'),
+        meta: { title: '日历', name: ['日历'] }
       },
     ]
   }

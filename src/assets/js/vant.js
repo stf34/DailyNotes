@@ -11,7 +11,9 @@ import {
     PullRefresh,
     List,
     Cell,
-    CellGroup
+    CellGroup,
+    Tab,
+    Tabs
 } from 'vant'
 Vue
 .use(Button)
@@ -26,3 +28,5 @@ Vue
 .use(List)//List 列表
 .use(Cell)//Cell 
 .use(CellGroup)//CellGroup 单元格
+.use(Tab)
+.use(Tabs)//Tab 标签页
