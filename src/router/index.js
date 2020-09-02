@@ -1,19 +1,27 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import layout from '../views/page/layout/index.vue'
+
 
 Vue.use(VueRouter)
 
   const routes = [
-  {
-    path: '/',
-    name: 'layout',
-    component: layout,
-    meta:{
-      name:'首页',
-      title:'首页'
+    {
+      path: '/',
+      component: () => import('../views/coverpage/index.vue')
+    },
+    {
+      path: '/layout',
+      component: () => import('../views/page/layout/index.vue'),
+      meta: { name:'首页', title: '描述文件' },
+      // children: [
+      //   {
+      //     path: '/',
+      //     // icon: 'el-icon-lx-home',
+      //     component: () => import('../views/page/home/index/index.vue'),
+      //     meta: { title: '首页', name: ['首页'] }
+      //   },
+      // ]
     }
-  }
   // {
   //   path: '/about',
   //   name: 'About',

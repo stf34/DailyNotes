@@ -1,16 +1,22 @@
 <template>
     <div class="layout">
-        我是主页
+        <!-- 二级级容器 -->
+        <router-view/>
+        <layouFoot/>
     </div>
 </template>
 
 <script>
+import layouFoot from '../../../components/layouFoot'
 export default {
     name:'layout',
     data() {
         return {
 
         };
+    },
+    components: {
+       layouFoot,
     },
     created() {
 
