@@ -13,7 +13,9 @@ import {
     Cell,
     CellGroup,
     Tab,
-    Tabs
+    Tabs,
+    Tabbar,
+    TabbarItem
 } from 'vant'
 Vue
 .use(Button)
@@ -30,3 +32,5 @@ Vue
 .use(CellGroup)//CellGroup 单元格
 .use(Tab)
 .use(Tabs)//Tab 标签页
+.use(Tabbar)//Tab 标签页
+.use(TabbarItem)//Tabbar 标签栏
