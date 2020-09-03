@@ -5,7 +5,6 @@
                 :class="{vanRadius:active < index&&(active == index-1),vanRadiusl:active > index&&(active == index+1)}"
                 v-for="(val,index) in data" :key="index"
                 :icon="active == index?val.icon:val.icon1"
-                replace
                 >
                 {{val.name}}
             </van-tabbar-item>
@@ -44,11 +43,12 @@ export default {
         };
     },
     created() {
-        // /* 更改初始页面 */
-        this.onChange()
+    },
+    catch(){
+        this.$router.push('/location').catch(err => { console.log(err) })
     },
     mounted() {
-
+        this.onChange()
     },
     methods: {
         onChange() {
@@ -63,6 +63,20 @@ export default {
             else if (this.active === 1) {
                 this.$router.push({
                     path: '/SomeNotes',
+                    replace: true
+                })
+            }
+            //打卡器
+            else if (this.active === 2) {
+                this.$router.push({
+                    path: '/punches',
+                    replace: true
+                })
+            }
+            //小账本
+            else if (this.active === 3) {
+                this.$router.push({
+                    path: '/AccountBook',
                     replace: true
                 })
             }

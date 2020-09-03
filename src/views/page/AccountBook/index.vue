@@ -1,12 +1,12 @@
 <template>
-    <div class="punches">
-        打卡器
+    <div class="AccountBook">
+        小账本
     </div>
 </template>
 
 <script>
 export default {
-    name:'punches',
+    name:'AccountBook',
     data() {
         return {
 
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.punches{
+.AccountBook{
     
 }
 </style>
