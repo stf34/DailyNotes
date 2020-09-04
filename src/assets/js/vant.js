@@ -15,7 +15,8 @@ import {
     Tab,
     Tabs,
     Tabbar,
-    TabbarItem
+    TabbarItem,
+    Toast
 } from 'vant'
 Vue
 .use(Button)
@@ -34,3 +35,4 @@ Vue
 .use(Tabs)//Tab 标签页
 .use(Tabbar)//Tab 标签页
 .use(TabbarItem)//Tabbar 标签栏
+.use(Toast)//Toast 轻提示
