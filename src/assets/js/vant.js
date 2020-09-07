@@ -16,7 +16,9 @@ import {
     Tabs,
     Tabbar,
     TabbarItem,
-    Toast
+    Toast,
+    Step,
+    Steps
 } from 'vant'
 Vue
 .use(Button)
@@ -36,3 +38,5 @@ Vue
 .use(Tabbar)//Tab 标签页
 .use(TabbarItem)//Tabbar 标签栏
 .use(Toast)//Toast 轻提示
+.use(Step)
+.use(Steps)//Steps 步骤条

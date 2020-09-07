@@ -43,6 +43,8 @@ export default {
 
 <style scoped lang="less">
 .home{
-    
+    width: 100%;
+    height: 100vh;
+   background-color: #060629; 
 }
 </style>
