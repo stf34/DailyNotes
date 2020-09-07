@@ -18,9 +18,9 @@
                 <template #title>
                 <span class="Text">{{item.name}}</span> 
                 </template>
-                <van-row type="flex" justify="space-around">
+                <van-row type="flex" justify="space-between">
                     <van-col span="10">
-                        
+                        <valSteps />
                     </van-col>
                     <van-col span="14">
                         <valSoll :ListData='ListData' />
@@ -33,6 +33,7 @@
 
 <script>
 import valSoll from '../draggable/index'
+import valSteps from '../Steps/index'
 export default {
     props:["taberData","icon"],
     name:'taber',
@@ -43,6 +44,7 @@ export default {
     },
     components:{
         valSoll,
+        valSteps
     },
     created() {
 
@@ -81,7 +83,8 @@ export default {
             // height: 80px;
             /* 背景色 */
             .van-tabs__nav{
-                background-color: rgba(0, 0, 0, 0);
+                // background-color: rgba(0, 0, 0, 0);
+                background-color: #060629; 
                 /* 点击后的样式 */
                 .van-tab--active{
                     color: #ECA67E !important;
@@ -101,6 +104,11 @@ export default {
                     background-color:#ECA67E;
                 }
             }
+        }
+        /* 内容区域 */
+        .van-tabs__content{
+            box-sizing: border-box;
+            padding: 10px;
         }
     }
 }
