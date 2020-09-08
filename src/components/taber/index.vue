@@ -19,10 +19,10 @@
                 <span class="Text">{{item.name}}</span> 
                 </template>
                 <van-row type="flex" justify="space-between">
-                    <van-col span="10">
-                        <valSteps />
+                    <van-col span="8">
+                        <valSteps :StepsData='StepsData' />
                     </van-col>
-                    <van-col span="14">
+                    <van-col span="15">
                         <valSoll :ListData='ListData' />
                     </van-col>
                 </van-row>
@@ -35,11 +35,17 @@
 import valSoll from '../draggable/index'
 import valSteps from '../Steps/index'
 export default {
-    props:["taberData","icon"],
+    /* 
+    "taberData",//tab栏的内容
+    "icon",//图标
+    'ListData',//tab栏下面的内容
+    'StepsData'//左侧步骤条内的内容
+    */
+    props:["taberData","icon",'ListData','StepsData'],
     name:'taber',
     data() {
         return {
-            ListData: ['你好', 2, 3, 4, 5, 6, 7, 8]
+            
         };
     },
     components:{
@@ -107,8 +113,10 @@ export default {
         }
         /* 内容区域 */
         .van-tabs__content{
-            box-sizing: border-box;
-            padding: 10px;
+            .van-row{
+                box-sizing: border-box;
+                padding: 10px;
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="layouFoot">
-        <van-tabbar v-model="active" @change="onChange">
+        <van-tabbar v-model="active" fixed z-index='99' @change="onChange">
             <van-tabbar-item
                 :class="{vanRadius:active < index&&(active == index-1),vanRadiusl:active > index&&(active == index+1)}"
                 v-for="(val,index) in data" :key="index"
