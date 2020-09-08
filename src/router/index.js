@@ -39,7 +39,19 @@ Vue.use(VueRouter)
           meta: { title: '小账本', name: ['小账本'] }
         },
       ]
-    }
+    },
+    {
+      path: '/quillEditor',
+      // icon: 'el-icon-lx-home',
+      component: () => import('../views/page/quillEditor/index.vue'),
+      meta: { title: '编辑笔记', name: ['编辑笔记'] }
+    },
+    {
+      path: '/EditNotes',
+      // icon: 'el-icon-lx-home',
+      component: () => import('../views/page/EditNotes/index.vue'),
+      meta: { title: '编辑笔记', name: ['编辑笔记'] }
+    },
   // {
   //   path: '/about',
   //   name: 'About',
@@ -61,6 +73,7 @@ VueRouter.prototype.push = function push(location) {
 
 const router = new VueRouter({
   mode: 'history',
+  // mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

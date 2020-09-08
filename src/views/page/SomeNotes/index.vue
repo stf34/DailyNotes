@@ -26,6 +26,6 @@ export default {
 
 <style scoped lang="less">
 .SomeNotes{
-    
+
 }
 </style>

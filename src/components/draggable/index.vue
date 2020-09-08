@@ -73,6 +73,9 @@ export default {
                     Number:index
                 }
             )
+            this.$router.push({
+                path:'/quillEditor'
+            })
         }
     }
 };

@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: './',//配置打包后的文件可以在本地打开
     css: {
         loaderOptions: {
             postcss: {
