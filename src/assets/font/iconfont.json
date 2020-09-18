@@ -1,0 +1,86 @@
+{
+  "id": "2078157",
+  "name": "DailyNotes",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1229724",
+      "name": "云",
+      "font_class": "yun",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "2217560",
+      "name": "左箭头",
+      "font_class": "arrow-left",
+      "unicode": "e766",
+      "unicode_decimal": 59238
+    },
+    {
+      "icon_id": "3755875",
+      "name": "云",
+      "font_class": "yun1",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "3893771",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "5184516",
+      "name": "太阳",
+      "font_class": "taiyang",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "6085761",
+      "name": "VIP",
+      "font_class": "VIP",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "8936804",
+      "name": "太阳",
+      "font_class": "taiyang1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "767361",
+      "name": "锁",
+      "font_class": "lock",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "1788955",
+      "name": "锁",
+      "font_class": "suo",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "5206477",
+      "name": "锁",
+      "font_class": "suo1",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "14441745",
+      "name": "树叶",
+      "font_class": "shuye",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}

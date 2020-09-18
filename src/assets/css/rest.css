@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 a{ text-decoration:none;}
 a:hover img{ border:none;}
 
-a:active{noOutline:expression(this.onFocus=this.blur());}
+a:active{}
 /*清除浮动*/
 .clearfix:after {
     content: ".";
@@ -49,7 +49,20 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
-/*png css hack for ie6*/
-*html img.png{
-    _background-image: expression(this.runtimeStyle.backgroundImage = "none",this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",this.src = "http://i0.itc.cn/20101019/848_0a785a7b_1118_4825_85dc_e8696988c94b_0.gif");
+/* 图标字体 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#iconfont') format('svg');
 }
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

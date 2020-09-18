@@ -3,7 +3,7 @@
  */
 import axios from 'axios';
 import QS from 'qs';
-// import { Toast } from 'mint-ui';
+
 // import store from '../store/index'
 
 // 环境的切换
@@ -61,7 +61,7 @@ axios.interceptors.response.use(
                 // 清除本地token和清空vuex中token对象    
                 // 跳转登录页面    
                 case 403:
-                    Toast('登录过期，请重新登录');
+                    this.$toast('登录过期，请重新登录');
                     // 清除token     
                     localStorage.removeItem('token');
                     store.commit('loginSuccess', null);     // 不太懂的话可不对状态码进行操作
@@ -77,11 +77,11 @@ axios.interceptors.response.use(
                     break;
                 // 404请求不存在    
                 case 404:
-                    Toast('网络请求不存在');
+                    this.$toast('网络请求不存在');
                     break;
                 // 其他错误，直接抛出错误提示    
                 default:
-                    Toast(error.response.data.message);
+                    this.$toast(error.response.data.message);
             }
             return Promise.reject(error.response);
         }
