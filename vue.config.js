@@ -1,4 +1,15 @@
 module.exports = {
+    devServer: {
+        proxy: {
+            "/api": {
+                target: 'https://api.ai.qq.com',
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/api': '/'
+                }
+            }
+        }
+    },
     publicPath: './',//配置打包后的文件可以在本地打开
     css: {
         loaderOptions: {

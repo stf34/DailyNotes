@@ -9,6 +9,8 @@ import './assets/js/vant'//引入vant UI 相关组件配置
 import local from "./api/localStorage";//全局本地存储数据；
 Vue.prototype.local = local;
 
+import md5 from 'js-md5'//引入MD5加密，并设置全局
+Vue.prototype.$md5 = md5
 
 /* 富文本编辑器 */
 import VueQuillEditor from 'vue-quill-editor'

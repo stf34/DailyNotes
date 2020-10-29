@@ -18,7 +18,10 @@ import {
     TabbarItem,
     Toast,
     Step,
-    Steps
+    Steps,
+    Lazyload,
+    ImagePreview,
+    Field
 } from 'vant'
 Vue
 .use(Button)
@@ -40,3 +43,6 @@ Vue
 .use(Toast)//Toast 轻提示
 .use(Step)
 .use(Steps)//Steps 步骤条
+.use(Lazyload)//懒加载
+.use(ImagePreview)//图片预览
+.use(Field)//输入框
