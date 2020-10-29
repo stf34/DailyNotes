@@ -8,7 +8,7 @@ import QS from 'qs';
 
 // 环境的切换
 // if (process.env.NODE_ENV === 'development') {//测试
-//     axios.defaults.baseURL = 'http://www.dev.com';
+    axios.defaults.baseURL = 'https://api.ai.qq.com/fcgi-bin/nlp/nlp_textchat',//腾讯闲聊api
 // } else if (process.env.NODE_ENV === 'test') {//验收
 //     axios.defaults.baseURL = 'http://www.test.com';
 // } else if (process.env.NODE_ENV === 'production') {//正式生产
@@ -93,7 +93,7 @@ axios.interceptors.response.use(
  * @param {String} url [请求的url地址] 
  * @param {Object} params [请求时携带的参数] 
  */
-export function get (url, params) {
+export function get(url, params) {
     return new Promise((resolve, reject) => {
         axios.get(url, {
             params: params
@@ -112,7 +112,7 @@ export function get (url, params) {
  * @param {String} url [请求的url地址] 
  * @param {Object} params [请求时携带的参数] 
  */
-export function post (url, params) {
+export function post(url, params) {
     return new Promise((resolve, reject) => {
         axios.post(url, QS.stringify(params))
             .then(res => {
@@ -122,4 +122,41 @@ export function post (url, params) {
                 reject(err.data)
             })
     });
+}
+
+/**
+ * 封装delete方法
+ * @param url
+ * @param data
+ * @returns {Promise}
+ */
+export function axiosDelete(url, params) {
+    return new Promise((resolve, reject) => {
+        axios.delete(url, { params: params })
+            .then(response => { // 这里传递的参数不做处理
+                resolve(response)
+            }, err => {
+                reject(err)
+            }).catch((error) => {
+                reject(error)
+            })
+    })
+}
+
+/**
+* 封装patch请求
+* @param url
+* @param data
+* @returns {Promise}
+*/
+
+export function axiosPatch(url, data = {}) {
+    return new Promise((resolve, reject) => {
+        axios.patch(url, QS.stringify(data), Headers)
+            .then(response => {
+                resolve(response)
+            }, err => {
+                reject(err)
+            })
+    })
 }
